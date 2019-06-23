@@ -1,13 +1,13 @@
-{
-  "menu": {
+var a = [
+  {
     "home": "home_a",
-    "about": "home_a",
-    "servises": "home_a",
-    "vontacts": "home_a"
+    "about": "about_a",
+    "servises": "servises_a",
+    "contacts": "contacts_a"
   },
-  "header": {
+  {
     "offer": "h1",
     "subtitle": "h2",
     "cta": "button",
   }
-}
+]
