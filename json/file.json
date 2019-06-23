@@ -6,7 +6,8 @@
     "contacts": "contacts_a"
   },
   {
-    "offer": "h1",
-    "subtitle": "h2",
-    "cta": "button"
+    "home": "home_a",
+    "about": "about_a",
+    "servises": "servises_a",
+    "contacts": "contacts_a"
   }]
