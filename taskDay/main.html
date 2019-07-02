@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная страница TaskDay</title>
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main/main.css">
+
+	<link rel="icon" href ="img/logo.png" type= "image/x-icon" > 
+	<link rel="shortcut icon" href ="img/logo.png" type="image/x-icon">	
+
+</head>
+<body>
+
+	<div id="menu-wrap"></div>
+
+	<nav id="menu" class="clearfix">
+		<div class="logo_box">
+			<img src="img/logo.png" class="logo">
+			<p class="description">
+				<b>Task</b> day
+			</p>
+		</div>
+
+		<div class="menu_box">
+			<ul class="menu">
+				<li class="menu_item menu_item_active">
+					<a href="main.html">
+						<svg class="menu_ico">
+							<use xlink:href="#home_svg"></use>
+						</svg>
+						<span class="menu_item_text">
+							Главная
+						</span>
+					</a>
+				</li>
+
+				<li class="menu_item">
+					<a href="profile.html">
+						<svg class="menu_ico">
+							<use xlink:href="#svg_profil"></use>
+						</svg>
+						<span class="menu_item_text">
+							Мой профиль
+						</span>
+					</a>
+				</li>
+
+				<li class="menu_item">
+					<a href="work.html">
+						<svg class="menu_ico">
+							<use xlink:href="#work_svg"></use>
+						</svg>
+						<span class="menu_item_text">Мои задачи</span>
+					</a>
+				</li>
+			</ul>
+		</div>	
+
+		<div class="clousAcc_box">
+			<a href="index.html">
+				<p class="clousAcc_btn">
+					<svg class="clousAcc_ico">
+						<use xlink:href="#clousAcc_svg"></use>
+					</svg>
+					<span class="menu_item_text">
+						Выйти из аккаунта
+					</span>
+				</p>
+			</a>
+		</div>	
+	</nav>
+
+	<section id="main" class="clearfix">
+		<div class="burger_box">
+			<div class="burger_block clearfix">
+				<span class="burger"></span>
+				<span class="burger"></span>
+			</div>
+		</div>
+
+		<div class="main_box">
+
+			<div class="header_box clearfix">
+				<div class="avatar_box">
+					<div class="avatar_block">
+						<img src="img/avatar.png" class="avatar">
+						<p class="avatar_name">
+							Алексей
+							<img src="img/arrow-down.svg" class="avatar_arrow">
+						</p>
+					</div>
+
+					<div class="profil-menu-box">
+						<ul class="profil-menu">
+							<li class="profil-item">
+								<a href="profile.html" class="profil-link">
+									Мой профиль
+								</a>
+							</li>
+							<li class="profil-item">
+								<a href="#" class="profil-link">
+									Мой сообщения
+								</a>
+							</li>
+							<li class="profil-item">
+								<a href="work.html" class="profil-link">
+									Мои задачи
+								</a>
+							</li>
+							<li class="profil-item">
+								<a href="index.html" class="profil-link">
+									Выйти
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="colokol_box">
+					<svg class="colokol_icon">
+						<use xlink:href="#colokol_svg"></use>
+					</svg>
+					<span class="colokol_number"></span>
+
+					<!------- Оповещания ----------->
+					<div class="notific_box"></div>
+
+				</div>
+			</div>
+
+			<div class="offer_box">
+				<h1 class="offer">
+					Приветствуем, Алексей, Вас в вашем личном <span class="color_servises">TaskDay manager</span>!
+				</h1>
+
+				<div class="main_offer_btn">
+					<a href="work.html">
+						<button class="btn btn_offer">
+							Перейти к списку задач
+						</button>
+					</a>
+
+					<button class="btn_offer_two">
+						Выбрать другой тариф
+					</button>
+				</div>
+
+				<div class="offer_video_box">
+					<div class="play_box">
+						<svg class="play_ico">
+							<use xlink:href="#play_svg"></use>
+						</svg>
+					</div>
+
+					<p class="video_text">
+						Узнайте, как пользоваться сервисом
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="chat_box">
+			<svg class="chat_img">
+				<use xlink:href="#chat_svg"></use>
+			</svg>
+			<span class="chat_number"></span>
+		</div>
+	</section>
+
+
+	<!-- --------video_popup -------------->
+
+	<div class="video_box">
+		<div class="video_popup_clous">&#10006;</div>
+		<div class="video_block">
+			<iframe class="video_iframe" src="https://www.youtube.com/embed/n6txTQnEPnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<!------------chat and notification----- -->
+
+
+	<div class="chat_popup clearfix">
+		<div class="chatPopup_box">
+			<span class="chatPopup_clous">
+				&#10006;
+			</span>
+
+			<div class="chatpopupLogo_box">
+				<img src="img/logo.png" class="chatpopup_logo">
+				<p class="chatpopup_description">
+					<b>Task</b> day
+				</p>
+				<p class="chatPopupText">
+					Чат с поддержкой
+				</p>
+			</div>
+
+			<div class="chatPopupBlock">
+				<div class="chatPopup_chat_box"></div>
+			</div>
+
+			<div class="chatContent_box">
+				<textarea id="chatText" placeholder="Введите сообщение..."></textarea>
+				<svg class="send_btn">
+					<use xlink:href="#send_svg"></use>
+				</svg>
+			</div>
+		</div>
+	</div>
+
+<!------- Шаблон сообщения в чате --------->
+
+<template id="chatTemplate">
+	<div class="chat-message-box client-message-box clearfix">
+		<div class="chat-message-block client-message-block">
+			<p class="chat-message-text client-message-text">
+				Привет
+			</p>
+		</div>
+	</div>
+</template>
+
+<!-- Щаблон для админа  -->
+<template id="anminMessage">
+	<div class="chat-message-box support-message-box support-message-box_notRead clearfix">
+		<div class="chat-message-block support-message-block">
+			<p class="chat-message-text support-message-text"></p>
+		</div>
+	</div>
+</template>	
+
+<!--------------- Шаблон оповещаний ------------>
+
+<template id="notificTemplate">
+	<div class="notific_block">
+		<span class="notific-block-clous">&#10006;</span>
+		<div class="notific-content">
+			<span class="notific-heading">
+				
+			</span>
+			<p class="notific-text">
+				
+			</p>
+		</div>
+		<div class="notific-link-box">
+			<a target="blank" class="notific-link">
+				<svg class="notific-link-ico">
+					<use xlink:href="#send_svg"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+</template>
+
+
+
+
+
+
+<!-- --------svg --------------->
+<svg display="none" xmlns="http://www.w3.org/2000/svg" >
+<symbol id='home_svg' viewBox="0 0 495.398 495.398">
+	<g>
+		<g>
+			<g>
+				<path d="M487.083,225.514l-75.08-75.08V63.704c0-15.682-12.708-28.391-28.413-28.391c-15.669,0-28.377,12.709-28.377,28.391
+					v29.941L299.31,37.74c-27.639-27.624-75.694-27.575-103.27,0.05L8.312,225.514c-11.082,11.104-11.082,29.071,0,40.158
+					c11.087,11.101,29.089,11.101,40.172,0l187.71-187.729c6.115-6.083,16.893-6.083,22.976-0.018l187.742,187.747
+					c5.567,5.551,12.825,8.312,20.081,8.312c7.271,0,14.541-2.764,20.091-8.312C498.17,254.586,498.17,236.619,487.083,225.514z"/>
+				<path d="M257.561,131.836c-5.454-5.451-14.285-5.451-19.723,0L72.712,296.913c-2.607,2.606-4.085,6.164-4.085,9.877v120.401
+					c0,28.253,22.908,51.16,51.16,51.16h81.754v-126.61h92.299v126.61h81.755c28.251,0,51.159-22.907,51.159-51.159V306.79
+					c0-3.713-1.465-7.271-4.085-9.877L257.561,131.836z"/>
+			</g>
+		</g>
+	</g>
+</symbol>
+</svg>
+
+<svg display="none" xmlns="http://www.w3.org/2000/svg">
+	<symbol id="work_svg" viewBox="0 -31 512 512" >
+		<path d="m211 240h90v30h-90zm0 0"/>
+		<path d="m415.378906 270h-84.378906v15c0 8.289062-6.710938 15-15 15h-120c-8.289062 0-15-6.710938-15-15v-15h-84.378906c-19.394532 0-36.546875-12.363281-42.6875-30.761719l-53.933594-161.828125v327.589844c0 24.8125 20.1875 45 45 45h422c24.8125 0 45-20.1875 45-45v-327.578125l-53.9375 161.816406c-6.136719 18.398438-23.289062 30.761719-42.683594 30.761719zm0 0"/><path d="m316 0h-120c-24.8125 0-45 20.1875-45 45v15h-125.191406l56.574218 169.746094c2.050782 6.136718 7.777344 10.253906 14.238282 10.253906h84.378906v-15c0-8.289062 6.710938-15 15-15h120c8.289062 0 15 6.710938 15 15v15h84.378906c6.460938 0 12.1875-4.117188 14.238282-10.253906l56.578124-169.746094h-125.195312v-15c0-24.8125-20.1875-45-45-45zm-135 60v-15c0-8.277344 6.722656-15 15-15h120c8.277344 0 15 6.722656 15 15v15zm0 0"/>
+	</symbol>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" 
+	 display="none">
+<symbol id="svg_profil" viewBox="0 0 350 350" >
+	<g>
+		<path d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587
+			C104.535,132.855,136.084,171.173,175,171.173z"/>
+		<path d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z"/>
+		<path d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z"/>
+		<path d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761
+			s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131
+			c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496
+			c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z"/>
+	</g>
+</symbol>
+</svg>
+
+
+<svg display="none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="clousAcc_svg" viewBox="0 0 476.737 476.737">
+	<g>
+		<g>
+			<g>
+				<path d="M238.369,0C106.726,0,0,106.726,0,238.369c0,131.675,106.726,238.369,238.369,238.369
+					c131.675,0,238.369-106.694,238.369-238.369C476.737,106.726,370.043,0,238.369,0z M348.813,150.395l-88.578,88.61l78.407,87.338
+					c6.198,6.198,6.198,16.304,0,22.47c-6.166,6.198-16.273,6.198-22.438,0l-78.407-87.338l-87.37,87.338
+					c-6.198,6.198-16.273,6.198-22.47,0c-6.198-6.166-6.198-16.273,0-22.47l88.578-88.578l-78.376-87.37
+					c-6.198-6.198-6.198-16.273,0-22.47s16.273-6.198,22.47,0l78.407,87.37l87.338-87.37c6.198-6.198,16.273-6.198,22.47,0
+					C355.042,134.122,355.01,144.197,348.813,150.395z"/>
+			</g>
+		</g>
+	</g>
+</symbol>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" display="none">
+<symbol id="colokol_svg" viewBox="0 0 512 512">
+	<g>
+		<g>
+			<path d="M467.812,431.851l-36.629-61.056c-16.917-28.181-25.856-60.459-25.856-93.312V224c0-67.52-45.056-124.629-106.667-143.04
+				V42.667C298.66,19.136,279.524,0,255.993,0s-42.667,19.136-42.667,42.667V80.96C151.716,99.371,106.66,156.48,106.66,224v53.483
+				c0,32.853-8.939,65.109-25.835,93.291l-36.629,61.056c-1.984,3.307-2.027,7.403-0.128,10.752c1.899,3.349,5.419,5.419,9.259,5.419
+				H458.66c3.84,0,7.381-2.069,9.28-5.397C469.839,439.275,469.775,435.136,467.812,431.851z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M188.815,469.333C200.847,494.464,226.319,512,255.993,512s55.147-17.536,67.179-42.667H188.815z"/>
+		</g>
+	</g>
+</symbol>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" 
+	 display="none">
+<symbol id="play_svg" viewBox="0 0 232.153 232.153">
+	<g>
+		<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266
+			c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267
+			l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z"/>
+	</g>
+</symbol>
+</svg>
+
+<svg display="none" xmlns="http://www.w3.org/2000/svg">
+	<symbol viewBox="0 -24 480 480" id="chat_svg">
+		<path d="m408 0h-336c-39.746094.0429688-71.9570312 32.253906-72 72v208c.0429688 39.746094 32.253906 71.957031 72 72h22.238281l-14.078125 70.398438c-.605468 3.027343.585938 6.128906 3.054688 7.976562s5.78125 2.109375 8.511718.671875l150.25-79.046875h166.023438c39.746094-.042969 71.957031-32.253906 72-72v-208c-.042969-39.746094-32.253906-71.9570312-72-72zm56 280c-.035156 30.914062-25.085938 55.964844-56 56h-168c-1.300781 0-2.578125.316406-3.726562.921875l-137.128907 72.175781 12.695313-63.496094c.480468-2.355468-.121094-4.800781-1.640625-6.660156-1.519531-1.863281-3.796875-2.941406-6.199219-2.941406h-32c-30.914062-.035156-55.964844-25.085938-56-56v-208c.035156-30.914062 25.085938-55.964844 56-56h336c30.914062.035156 55.964844 25.085938 56 56zm0 0"/>
+	</symbol>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" display="none">
+<symbol id="send_svg" viewBox="0 0 448.011 448.011">
+	<g>
+		<g>
+			<path d="M438.731,209.463l-416-192c-6.624-3.008-14.528-1.216-19.136,4.48c-4.64,5.696-4.8,13.792-0.384,19.648l136.8,182.4
+				l-136.8,182.4c-4.416,5.856-4.256,13.984,0.352,19.648c3.104,3.872,7.744,5.952,12.448,5.952c2.272,0,4.544-0.48,6.688-1.472
+				l416-192c5.696-2.624,9.312-8.288,9.312-14.528S444.395,212.087,438.731,209.463z"/>
+		</g>
+	</g>
+</symbol>
+</svg>
+
+<audio id="admin-message-audio" src="audio/chat-message.wav"></audio>
+<audio id="send-message-audio" src="audio/send-chat.wav"></audio>
+
+<script src="js/chatAndNotific.js"></script>
+<script src="js/video-popup.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
